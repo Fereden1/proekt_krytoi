@@ -1,0 +1,27 @@
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="${ctx}/" class="logo" aria-label="Дневник расходов — на главную">
+            <span class="logo-mark" aria-hidden="true">₽</span>
+            Дневник расходов
+        </a>
+        <nav class="main-nav" aria-label="Разделы страницы">
+            <ul>
+                <li><a href="${ctx}/#features">Возможности</a></li>
+                <li><a href="${ctx}/#how">Как это работает</a></li>
+                <li><a href="${ctx}/#categories">Категории</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <c:choose>
+                <c:when test="${not empty sessionScope.userId}">
+                    <a href="${ctx}/index" class="btn btn-outline btn-sm">Кабинет</a>
+                    <a href="${ctx}/logout" class="btn btn-primary btn-sm">Выйти</a>
+                </c:when>
+                <c:otherwise>
+                    <a href="${ctx}/login" class="btn btn-outline btn-sm">Войти</a>
+                    <a href="${ctx}/register" class="btn btn-primary btn-sm">Регистрация</a>
+                </c:otherwise>
+            </c:choose>
+        </div>
+    </div>
+</header>

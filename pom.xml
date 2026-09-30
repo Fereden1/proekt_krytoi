@@ -7,6 +7,11 @@
   <version>1.0-SNAPSHOT</version>
   <name>expenseLog Maven Webapp</name>
   <url>http://maven.apache.org</url>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -51,6 +56,21 @@
               <configuration>
                   <source>11</source>
                   <target>11</target>
+                  <encoding>UTF-8</encoding>
+              </configuration>
+          </plugin>
+          <plugin>
+              <groupId>org.eclipse.jetty.ee10</groupId>
+              <artifactId>jetty-ee10-maven-plugin</artifactId>
+              <version>12.0.16</version>
+              <configuration>
+                  <httpPort>8080</httpPort>
+                  <webApp>
+                      <contextPath>/expenseLog</contextPath>
+                  </webApp>
+                  <systemProperties>
+                      <file.encoding>UTF-8</file.encoding>
+                  </systemProperties>
               </configuration>
           </plugin>
       </plugins>

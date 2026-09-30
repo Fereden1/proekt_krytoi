@@ -32,6 +32,6 @@ public class IndexServlet extends HttpServlet {
         req.setAttribute("totalExpense", transactionService.totalExpense(userId));
         req.setAttribute("balance",      transactionService.balance(userId));
 
-        req.getRequestDispatcher("/index.jsp").forward(req, resp);
+        req.getRequestDispatcher("/dashboard.jsp").forward(req, resp);
     }
 }

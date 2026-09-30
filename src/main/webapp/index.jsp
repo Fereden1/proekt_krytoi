@@ -1,4 +1,4 @@
-[30.09.2026 19:01] Адэлия 💗: <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <c:set var="ctx" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html>
@@ -14,7 +14,6 @@
 
 <main>
 
-    <!-- ====== HERO ====== -->
     <section class="hero">
         <div class="container hero-inner">
             <div class="hero-text">
@@ -29,7 +28,6 @@
                 <p class="hero-note fade-in" style="--i:3">Для регистрации нужны только логин, имя и пароль.</p>
             </div>
 
-            <!-- Живой пример статистики (заполняется js/main.js) -->
             <div class="ledger fade-in" style="--i:2" aria-labelledby="ledgerTitle">
                 <div class="ledger-head">
                     <div>
@@ -57,7 +55,7 @@
                         <div class="total-value" id="totalBalance">0 ₽</div>
                     </div>
                 </div>
-                [30.09.2026 19:01] Адэлия 💗: <div class="cat-heading">Расходы по категориям</div>
+                <div class="cat-heading">Расходы по категориям</div>
                 <ul class="cat-list" id="catList" aria-live="polite">
                     <li class="cat-item"><div class="cat-row"><span class="cat-name"></span><span class="cat-sum"></span></div><div class="track"><div class="fill"></div></div></li>
                     <li class="cat-item"><div class="cat-row"><span class="cat-name"></span><span class="cat-sum"></span></div><div class="track"><div class="fill"></div></div></li>
@@ -71,33 +69,32 @@
         </div>
     </section>
 
-    <!-- ====== ВОЗМОЖНОСТИ ====== -->
     <section class="section" id="features">
         <div class="container split">
             <h2 class="section-title">Учёт без таблиц и лишних настроек</h2>
             <ul class="feature-list">
                 <li>
-                        <span class="icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16v4z"/></svg>
-                        </span>
+                    <span class="icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16v4z"/></svg>
+                    </span>
                     <div>
                         <h3>Быстрая запись</h3>
                         <p>Сумма, категория, дата и комментарий. Операцию можно изменить или удалить в любой момент.</p>
                     </div>
                 </li>
                 <li>
-                        <span class="icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg>
-                        </span>
+                    <span class="icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg>
+                    </span>
                     <div>
                         <h3>Готовые категории</h3>
                         <p>Продукты, жильё, транспорт, зарплата и другие уже есть. Если чего-то не хватает, добавьте свою.</p>
                     </div>
                 </li>
                 <li>
-                        <span class="icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20V10M12 20V4M19 20v-7"/></svg>
-                        </span>
+                    <span class="icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20V10M12 20V4M19 20v-7"/></svg>
+                    </span>
                     <div>
                         <h3>Статистика за период</h3>
                         <p>Доход, расход и баланс за неделю, месяц или год, а также доля каждой категории в расходах.</p>
@@ -106,7 +103,7 @@
             </ul>
         </div>
     </section>
-    [30.09.2026 19:01] Адэлия 💗: <!-- ====== КАК ЭТО РАБОТАЕТ ====== -->
+
     <section class="section section-alt" id="how">
         <div class="container">
             <h2 class="section-title">Три шага до первой статистики</h2>
@@ -130,7 +127,6 @@
         </div>
     </section>
 
-    <!-- ====== КАТЕГОРИИ ====== -->
     <section class="section" id="categories">
         <div class="container">
             <h2 class="section-title">Категории уже готовы</h2>
@@ -164,7 +160,6 @@
         </div>
     </section>
 
-    <!-- ====== ПРИЗЫВ ====== -->
     <section class="cta">
         <div class="container cta-inner">
             <div>
